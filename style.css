@@ -1,0 +1,179 @@
+/* style.css - Thème Bleu Marine & Rouge */
+
+:root {
+    --couleur-principale: #001f3f; /* Bleu Marine foncé */
+    --couleur-secondaire: #FF4136; /* Rouge Vif (dynamique) */
+    --couleur-tertiaire: #F0F8FF; /* Bleu très clair (pour le fond lisible) */
+    --couleur-fond: #f4f4f4;
+    --couleur-texte: #333;
+    --couleur-texte-clair: #f9f9f9;
+}
+
+/* 1. Image en Arrière-Plan */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changement de police pour varier */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    /* Assurez-vous d'avoir une image nommée 'background.png' dans votre dossier 'images/' */
+    background-image: url('images/background.png'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-color: var(--couleur-fond); 
+    
+    color: var(--couleur-texte);
+}
+
+/* Conteneur principal (pour la lisibilité sur l'image de fond) */
+.container {
+    width: 85%; /* Légère augmentation de la largeur */
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 40px; 
+    background-color: rgba(255, 255, 255, 0.9); /* Très léger voile pour rendre le texte lisible */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* En-tête (Header) */
+header {
+    background: var(--couleur-principale); /* Bleu Marine */
+    color: white;
+    padding: 1.5em 0; /* Plus de padding */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 2px; /* Espacement pour un look plus moderne */
+}
+
+/* Menu de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: var(--couleur-secondaire); /* Rouge Vif */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0; /* Enlève les marges latérales pour coller les boutons */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px; /* Plus grand pour le clic */
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #f0332a; /* Nuance de rouge plus foncée au survol */
+    transform: translateY(-2px); /* Petit effet de soulèvement */
+}
+
+/* Titres */
+h2 {
+    color: var(--couleur-principale); /* Titre principal en Bleu Marine */
+    border-bottom: 3px solid var(--couleur-secondaire); /* Ligne rouge sous le titre */
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+h3 {
+    color: var(--couleur-secondaire); /* Sous-titres en Rouge Vif */
+}
+
+/* Galerie d'Images */
+.gallery-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Espace augmenté */
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-container img {
+    max-width: 320px; 
+    height: auto;
+    border: 5px solid var(--couleur-tertiaire); /* Bordure en bleu très clair */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Footer */
+footer {
+    background: var(--couleur-principale); /* Bleu Marine */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}/* Style du Formulaire (Ajout) */
+.formulaire-inscription {
+    padding: 20px;
+    border: 1px solid var(--couleur-tertiaire);
+    border-radius: 5px;
+}
+
+.formulaire-inscription fieldset {
+    border: 1px solid var(--couleur-secondaire); /* Bordure Rouge */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.formulaire-inscription legend {
+    color: var(--couleur-principale); /* Légende en Bleu Marine */
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--couleur-texte);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-button button {
+    background-color: var(--couleur-secondaire); /* Bouton en Rouge Vif */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.form-button button:hover {
+    background-color: #f0332a; /* Rouge plus foncé au survol */
+}

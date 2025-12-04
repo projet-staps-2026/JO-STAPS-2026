@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSF | Présentation Générale</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <main class="container">
+    <h2>Inscription des Délégations aux JUSF 2026</h2>
+    <p>
+        Bienvenue aux responsables d'UFR ! Veuillez remplir ce formulaire de pré-inscription pour enregistrer votre délégation aux Jeux Universitaires STAPS France. L'inscription définitive sera validée par l'envoi du dossier complet et du paiement des frais de participation.
+    </p>
+
+    <form action="#" method="POST" class="formulaire-inscription">
+        <fieldset>
+            <legend>Informations de Contact et UFR</legend>
+
+            <div class="form-group">
+                <label for="ufr_staps">Nom Complet de l'UFR STAPS :</label>
+                <input type="text" id="ufr_staps" name="ufr_staps" required placeholder="Ex: UFR STAPS Paris Nanterre">
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville du Campus :</label>
+                <input type="text" id="ville" name="ville" required placeholder="Ex: Nanterre">
+            </div>
+            
+            <div class="form-group">
+                <label for="email_contact">Email Officiel du Responsable de Délégation :</label>
+                <input type="email" id="email_contact" name="email_contact" required placeholder="contact@ufr.fr">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre_participants">Nombre estimé de participants (étudiants athlètes) :</label>
+                <input type="number" id="nombre_participants" name="nombre_participants" min="5" max="100" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choix des Disciplines</legend>
+            <p>Veuillez cocher les catégories sportives auxquelles votre délégation prévoit de participer :</p>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="collectifs" name="disciplines[]" value="collectifs">
+                <label for="collectifs">Sports Collectifs (Basketball, Handball, Football, Volleyball)</label><br>
+                
+                <input type="checkbox" id="athletisme" name="disciplines[]" value="athletisme">
+                <label for="athletisme">Athlétisme et Natation</label><br>
+                
+                <input type="checkbox" id="combat" name="disciplines[]" value="combat">
+                <label for="combat">Sports de Combat (Judo, Boxe)</label><br>
+                
+                <input type="checkbox" id="gymniques" name="disciplines[]" value="gymniques">
+                <label for="gymniques">Sports Gymniques et Artistiques</label><br>
+            </div>
+        </fieldset>
+        
+        <div class="form-button">
+            <button type="submit">Envoyer la pré-inscription</button>
+        </div>
+    </form>
+</main>

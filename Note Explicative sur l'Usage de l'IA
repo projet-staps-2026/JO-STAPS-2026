@@ -1,0 +1,20 @@
+Note Explicative sur l'Usage de l'IA
+Projet : Site Web Statique – Jeux Universitaires STAPS France (JUSF)
+Étudiant(e) : Imane Frida
+Parcours : M2 STAPS MOS (Management des Organisations Sportives)
+1. Outil d'Intelligence Artificielle Utilisé
+L'outil génératif principal utilisé pour la production initiale du site est Gemini.
+Usage de Gemini :
+•	Génération de Contenu Textuel : Création des ébauches de texte pour les cinq pages HTML (index.html, evenement.html, programme.html, infos_pratiques.html, inscriptions.html). Le contenu a été adapté aux informations spécifiques fournies (Imane Frida, M2 STAPS MOS Nanterre) et au thème (Jeux Olympiques inter-STAPS).
+•	Génération de Structure Technique : Création du modèle de base HTML pour assurer la cohérence des cinq pages, y compris le menu de navigation fonctionnel.
+•	Génération du Style CSS : Création du fichier style.css de base, y compris la définition des couleurs, le style du menu et, en seconde phase, l'intégration du fond (background-image) et de la classe gallery-container.
+2. Modifications et Interventions Manuelles Visibles
+Conformément aux contraintes du projet, une intervention manuelle significative a été effectuée sur le rendu pour le finaliser et le personnaliser :
+Fichier / Élément	Nature de la Modification Manuelle
+Général (Structure)	Organisation manuelle de l'arborescence des fichiers et des dossiers (images/, fichiers .html, style.css).
+style.css	Ajustement manuel des valeurs des couleurs (:root), ajout d'un fond semi-transparent sur le conteneur (.container) pour améliorer la lisibilité avec l'image de fond.
+evenement.html	Ajout manuel de la section "Les JUSF en Images" (gallery-container) et intégration des balises <img> pour lier les images téléchargées (ex: stade_principal.jpg, piscine_natation.jpg).
+index.html	Révision et reformulation de la description du Master 2 MOS (texte reformulé) pour insister sur les compétences de gestion de projet.
+inscriptions.html	Simplification du formulaire HTML (retrait de champs inutiles) et réorganisation des fieldset pour une meilleure clarté.
+Toutes les pages	Vérification et correction orthographique/grammaticale sur l'ensemble du contenu textuel.
+
